@@ -5,7 +5,7 @@ from language import SELECTED_LANG
 
 def get_lang_from_user():
     """
-    Language selection
+    Selecting language
     """
     global SELECTED_LANG
     while True:
