@@ -62,7 +62,7 @@ def calculate_mines(board, size):
 
 def get_row_from_user():
     """
-    Selecting row
+    Selection of row
     """
     while True:
         try:
