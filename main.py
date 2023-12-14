@@ -74,7 +74,7 @@ def get_row_from_user():
 
 def get_col_from_user():
     """
-    Selecting column
+    Selection of column
     """
     while True:
         try:
