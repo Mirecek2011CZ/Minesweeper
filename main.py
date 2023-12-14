@@ -49,7 +49,7 @@ def get_neighbors(x_c, y_c, size):
 
 def calculate_mines(board, size):
     """
-    Count of mines
+    Mine count
     """
     mine_count = 0
 
