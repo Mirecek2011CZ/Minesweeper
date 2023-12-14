@@ -16,7 +16,7 @@ def get_lang_from_user():
 
 def create_board(size, mines):
     """
-    Creating a game board
+    Creates a game board
     """
     board = [['.' for _ in range(size)] for _ in range(size)]
     mine_positions = random.sample(range(size * size), mines)
