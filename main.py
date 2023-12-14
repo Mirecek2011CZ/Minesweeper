@@ -5,7 +5,7 @@ from language import SELECTED_LANG
 
 def get_lang_from_user():
     """
-    Selecting language
+    Selection of language
     """
     global SELECTED_LANG
     while True:
@@ -119,7 +119,7 @@ def game_loop(board, size):
 
     print(TEXT["founded_all_mines"][SELECTED_LANG])
 
-def minesweeper(size = 9, mines = 8):
+def minesweeper(size = 9, mines = 5):
     """
     Minesweeper
     """

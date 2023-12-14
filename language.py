@@ -1,7 +1,5 @@
 """
-This is a comment
-written in
-more than just one line
+Selection of language
 """
 SELECTED_LANG = "en"
 
