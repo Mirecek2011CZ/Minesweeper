@@ -28,7 +28,7 @@ def create_board(size, mines):
 
 def display_board(board):
     """
-    Display board
+    Displays board
     """
     for row in board:
         print(" ".join([cell if cell != 'X' else '.' for cell in row]))
