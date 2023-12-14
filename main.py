@@ -35,7 +35,7 @@ def display_board(board):
 
 def get_neighbors(x_c, y_c, size):
     """
-    Number of surrounding mines
+    Surrounding mines
     """
     neighbors = []
 
