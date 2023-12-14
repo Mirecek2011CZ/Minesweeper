@@ -5,9 +5,7 @@ from language import SELECTED_LANG
 
 def get_lang_from_user():
     """
-    This is a comment
-    written in
-    more than just one line
+    Language selection
     """
     global SELECTED_LANG
     while True:
@@ -18,9 +16,7 @@ def get_lang_from_user():
 
 def create_board(size, mines):
     """
-    This is a comment
-    written in
-    more than just one line
+    Creating a game board
     """
     board = [['.' for _ in range(size)] for _ in range(size)]
     mine_positions = random.sample(range(size * size), mines)
@@ -32,18 +28,14 @@ def create_board(size, mines):
 
 def display_board(board):
     """
-    This is a comment
-    written in
-    more than just one line
+    Display board
     """
     for row in board:
         print(" ".join([cell if cell != 'X' else '.' for cell in row]))
 
 def get_neighbors(x_c, y_c, size):
     """
-    This is a comment
-    written in
-    more than just one line
+    Number of surrounding mines
     """
     neighbors = []
 
@@ -57,9 +49,7 @@ def get_neighbors(x_c, y_c, size):
 
 def calculate_mines(board, size):
     """
-    This is a comment
-    written in
-    more than just one line
+    Count of mines
     """
     mine_count = 0
 
@@ -72,9 +62,7 @@ def calculate_mines(board, size):
 
 def get_row_from_user():
     """
-    This is a comment
-    written in
-    more than just one line
+    Selecting row
     """
     while True:
         try:
@@ -86,9 +74,7 @@ def get_row_from_user():
 
 def get_col_from_user():
     """
-    This is a comment
-    written in
-    more than just one line
+    Selecting column
     """
     while True:
         try:
@@ -100,9 +86,7 @@ def get_col_from_user():
 
 def reveal_square(board, x_c, y_c, size):
     """
-    This is a comment
-    written in
-    more than just one line
+    Reveals selected the square
     """
     if board[x_c][y_c] == 'X':
         return 'X'
@@ -116,9 +100,7 @@ def reveal_square(board, x_c, y_c, size):
 
 def game_loop(board, size):
     """
-    This is a comment
-    written in
-    more than just one line
+    Loop
     """
     mines = calculate_mines(board, size)
     uncovered_count = 0
@@ -139,9 +121,7 @@ def game_loop(board, size):
 
 def minesweeper(size = 9, mines = 8):
     """
-    This is a comment
-    written in
-    more than just one line
+    Minesweeper
     """
     board = create_board(size, mines)
     display_board(board)
